@@ -13,9 +13,6 @@ void TEMP_S_INIT(void)
 }
 u16  TEMP_S_READ(void)
 {
-	u16 value;	
-	value = ADC_READ(TEMP_S_PIN);
-	u16 temp;
-	temp = ((u32)value * 500 ) / 1023;
+
 	return temp;
 }
